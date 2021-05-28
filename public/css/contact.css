@@ -75,3 +75,58 @@ header{
     padding-left: 20px;
     padding-right: 10px;
 }
+/* FOOTER DE LA PAGINA */
+.footer{
+    background-color: rgb(236, 226, 220);
+    padding: 30px;
+    height: 330px;
+    margin-top: 80px;
+    width: 100%;
+}
+.footer ul{
+    list-style: none; 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer2{
+    width: 15%;
+    padding: 0 15px;
+    margin-left: 90px;
+}
+.footer h4{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.footer a{
+    float: right;
+    margin-left: 30px;
+    color: black;
+    padding-top: 5px;
+    
+}
+.social{
+    float: right; 
+}
+.footer img{
+    margin-left: 80px;
+}
+ .footer li{
+    padding-bottom: 10px;
+    font-family:'Merriweather', serif;;
+    margin-top: 5px;
+}
+/* RESPONSIVE FOOTER */
+@media(max-width: 767px){
+    .footer2{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer2{
+        width: 100%;
+    
+    }
+}
