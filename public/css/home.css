@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 17px;
+} 
+body {
+    /* display: flex; */
+    min-height: 100vh;
+}
+/* MENU DE LA PAG */
+header{
+    width: 100%;
+    background-color: rgb(236, 226, 220);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.nav ul{
+    list-style: none;
+}
+.menu{
+    background-color: rgb(236, 226, 220);
+    text-align: right;
+    height: fit-content;
+    width: 80%;
+}
+.menu > li{
+    display: inline-block;
+    padding: 5px;  
+}
+.menu > li > a{
+    display: block;
+    padding: 0px 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;   
+}
+.submenu{
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    width: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+}
+.submenu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif; 
+    color:black;   
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+.logo{
+     float: left;
+    height: 60px;
+    margin-left: 100px; 
+    padding-top: 0px ; 
+}
+.cart{
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.login{
+    height: 30px;
+    padding-right: 100px;
+}
+/* FOOTER DE LA PAG */
+.footer{
+    background-color: rgb(236, 226, 220);
+    padding: 30px;
+    height: 330px;
+    margin-top: 80px;
+    width: 100%;
+}
+.footer ul{
+    list-style: none; 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer2{
+    width: 15%;
+    padding: 0 15px;
+    margin-left: 90px;
+}
+.footer h4{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.footer a{
+    float: right;
+    margin-left: 30px;
+    color: black;
+    padding-top: 5px;  
+}
+.social{
+    float: right; 
+}
+ .footer li{
+    padding-bottom: 5px;
+    font-family:'Merriweather', serif;
+    margin-top: 5px;
+}
+/* RESPONSIVE FOOTER */
+@media(max-width: 767px){
+    .footer2{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer2{
+        width: 100%;
+    }
+}
+.footer a{
+    float: right;
+    margin-left: 30px;
+    color: black;
+    padding-top: 5px;  
+}
+.footer img{
+    margin-left: 80px;
+}
+ .footer li{
+    padding-bottom: 10px;
+    font-family:'Merriweather', serif;
+    margin-top: 5px;
+}
+/* CONTENIDO DE LA PAG */
+.contenedor{
+    width: 100%;
+    max-width: 2000px;
+    margin: auto 0;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 800px;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider__btn:hover{
+    background-color: #dadada;
+}
+.slider__btn--right{
+    right: 10px;
+}
+.slider__btn--left{
+    left: 10px;
+}
+/* CONTENIDO DE LA PAG */
+#contenedor{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+.img{
+    width: 20%;
+    margin: 50px;
+    height: 400px;
+}
+.je{
+    height: 550px;
+    margin-left: 30px;
+}
+.ji{
+    height: 550px;
+    margin-left: 105px;
+}
+.ju{
+    height: 550px;
+    margin-left: 180px;
+}
+.best{
+    text-align: center;
+    margin-top: 180px;
+    font-family:'Merriweather', serif;
+    color: black;
+    font-weight: bold;
+    
+}
+.best a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.best a:visited{
+    color: black;
+}
+
+
